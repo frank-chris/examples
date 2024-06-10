@@ -1,0 +1,50 @@
+<html data-theme="emerald">
+    <head>
+        <meta http-equiv="cache-control" content="no-cache" charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel=icon href=assets/favicon.ico>
+        <link href="styles.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+        <script src="https://cdn.tailwindcss.com"></script>
+        <title>Example 3 - Logistic Regression</title>
+    </head>
+    <body>
+      <!-- navbar -->
+      <div class="navbar bg-base-100 sticky top-0 z-50">
+        <div class="navbar-start">
+          <a href="index.html" class="btn btn-ghost btn-square">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" stroke="currentColor"><path d="M21 13v10h-6v-6h-6v6h-6v-10h-3l12-12 12 12h-3zm-1-5.907v-5.093h-3v2.093l3 3z"/></svg>
+          </a>
+        </div>
+        <div class="navbar-center">
+          <a class="btn btn-ghost text-xl">Example 3 - Logistic Regression</a>
+        </div>
+        <div class="navbar-end">
+        </div>
+      </div>
+
+      <!-- main content --> 
+      <!-- two columns -->
+  
+        <div class="flex flex-col gap-8 pt-8 px-64 mb-8 w-full">
+          <div class="bg-base-200 w-full rounded-2xl p-8 content-center">
+            <iframe class="rounded-xl w-full justify-center" height="400" src="https://www.youtube.com/embed/yIYKR4sgzI8?si=ul2i4FL6GrDeABsH" title="Fusion" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+          <div class="bg-green-100 w-full rounded-2xl">
+            <div class="m-8">
+              <h1 class='text-3xl font-semibold'>Notes</h1>
+              <br><h3 class="text-lg font-medium">Introduction (0.00)</h3>
+The lecture, presented by Josh Starmer, introduces the topic of logistic regression, a technique used in traditional statistics and machine learning. Logistic regression is a type of regression analysis used for predicting a binary outcome, such as 0 or 1, yes or no, or true or false. The lecture aims to explain the concept of logistic regression and its applications.<br><img src="logistic/frames/0.00.png" class="w-full h-auto rounded-lg" /><br><br><h3 class="text-lg font-medium">Review of Linear Regression (24.20)</h3>
+Before diving into logistic regression, the lecture reviews linear regression, a technique used for predicting continuous outcomes. Linear regression involves fitting a line to the data and calculating the coefficient of determination (R-squared) and the p-value. The lecture explains that linear regression can be used for both traditional statistics and machine learning, and that it can be used to predict continuous outcomes such as size.<br><img src="logistic/frames/24.20.png" class="w-full h-auto rounded-lg" /><br><br><h3 class="text-lg font-medium">Logistic Regression (186.48)</h3>
+Logistic regression is similar to linear regression, except it predicts a binary outcome instead of a continuous outcome. The lecture explains that logistic regression fits an S-shaped logistic function to the data, which ranges from 0 to 1. This function represents the probability of a binary outcome, such as the probability of a mouse being obese given its weight.<br><img src="logistic/frames/186.48.png" class="w-full h-auto rounded-lg" /><br><br><h3 class="text-lg font-medium">Applications of Logistic Regression (254.32)</h3>
+Logistic regression has many applications in machine learning, including classification and prediction. The lecture explains that logistic regression can be used to classify new samples using continuous and discrete measurements. For example, a logistic regression model can be used to predict whether a mouse is obese or not based on its weight and genotype.<br><img src="logistic/frames/254.32.png" class="w-full h-auto rounded-lg" /><br><br><h3 class="text-lg font-medium">Comparison of Models (319.08)</h3>
+The lecture explains that logistic regression can be used to compare simple and complex models. In simple models, a single variable is used to predict the binary outcome, while in complex models, multiple variables are used. The lecture explains that logistic regression can be used to test whether each variable is useful for predicting the binary outcome, and to identify the most important variables.<br><img src="logistic/frames/319.08.png" class="w-full h-auto rounded-lg" /><br><br><h3 class="text-lg font-medium">Maximum Likelihood (421.24)</h3>
+The lecture explains that logistic regression uses maximum likelihood to fit the model to the data. Maximum likelihood involves calculating the likelihood of observing the data given the model, and then selecting the model with the highest likelihood. The lecture explains that maximum likelihood is used instead of least squares because logistic regression is used for binary outcomes, and least squares is not applicable to binary outcomes.<br><img src="logistic/frames/421.24.png" class="w-full h-auto rounded-lg" /><br><br><h3 class="text-lg font-medium">Conclusion (525.08)</h3>
+In conclusion, the lecture provides an introduction to logistic regression, a technique used in traditional statistics and machine learning for predicting binary outcomes. The lecture explains the concept of logistic regression, its applications, and how it is used to compare simple and complex models. The lecture also explains the maximum likelihood method used to fit the model to the data<br><img src="logistic/frames/525.08.png" class="w-full h-auto rounded-lg" />.<br><br><h3 class="text-lg font-medium">Takeaways</h3><ul class="list-disc pl-5">  <li>Logistic regression is a technique that can be used for traditional statistics as well as machine learning, and is used to predict whether something is true or false instead of predicting a continuous value.</li>  <li>Logistic regression fits an S-shaped logistic function to the data, which goes from 0 to 1 and tells you the probability that a mouse is obese based on its weight.</li>  <li>Logistic regression is usually used for classification, where if the probability a mouse is obese is greater than 50%, it is classified as obese, otherwise it is classified as not obese.</li>  <li>Logistic regression can work with continuous data like weight and age, and discrete data like genotype and astrological sign.</li>  <li>We can test to see if each variable is useful for predicting obesity, and if not, it means that the variable is not helping to prediction.</li>  <li>We use Wald's test to figure out if a variable's effect on the prediction is significantly different from zero, and if not, we can leave it out to save time and space.</li>  <li>Logistic regression's ability to provide probabilities and classify new samples using continuous and discrete measurements makes it a popular machine learning method.</li>  <li>Logistic regression uses maximum likelihood to fit the curve to the data, which is different from linear regression's use of least squares.</li>  <li>Logistic regression can be used to assess what variables are useful for classifying samples, and can help us determine which variables are not useful and can be left out.</li>  <li>Astrological sign was found to be "totes useless" in predicting obesity, meaning it is not a useful variable to include in the model.</li></ul><br><h3 class="text-lg font-medium">Glossary</h3><ul class="list-disc pl-5">  <li><b>Classification</b>: The process of assigning a sample to a specific category or group based on its characteristics.</li>  <li><b>Continuous data</b>: Data that can take on any value within a certain range, such as weight or age.</li>  <li><b>Discrete data</b>: Data that can only take on specific, distinct values, such as genotype or astrological sign.</li>  <li><b>Genotype</b>: The genetic makeup of an individual, referring to the specific combination of genes they possess.</li>  <li><b>Least squares</b>: A method of fitting a line to data by minimizing the sum of the squares of the residuals.</li>  <li><b Likelihood</b>: A measure of the probability of observing a particular set of data given a particular model or hypothesis.</li>  <li><b>Linear regression</b>: A statistical method used to predict the value of a continuous outcome variable based on one or more predictor variables.</li>  <li><b>Logistic regression</b>: A statistical method used to predict the probability of a binary outcome variable (e.g. 0/1, yes/no) based on one or more predictor variables.</li>  <li><b>Maximum likelihood</b>: A method of estimating model parameters by finding the values that maximize the likelihood of observing the data.</li>  <li><b>Multiple regression</b>: A statistical method used to predict the value of a continuous outcome variable based on multiple predictor variables.</li>  <li><b>P-value</b>: A measure of the probability of observing a result as extreme or more extreme than the one observed, given that the null hypothesis is true.</li>  <li><b>Residuals</b>: The differences between the observed values of a variable and the predicted values based on a model.</li>  <li><b>R-squared</b>: A measure of the proportion of the variance in the outcome variable that is explained by the predictor variables.</li>  <li><b>Statistical significance</b>: A measure of the probability that an observed result is due to chance, rather than a real effect.</li>  <li><b>Wald's test</b>: A statistical test used to determine whether the effect of a predictor variable on the outcome variable is statistically significant.</li></ul>
+            </div>
+          </div>
+        </div>
+        
+    </body>
+</html>
